@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Персонажи</title>
+</head>
+<body>
+<ul>
+    {% for character in object_list %}
+        <li> {{character.creator}} <a href="/character/{{ character.pk }}">  {{character}} </a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
